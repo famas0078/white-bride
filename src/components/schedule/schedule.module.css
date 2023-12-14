@@ -1,0 +1,48 @@
+.wrapper{
+    max-width: 1320px;
+    width: 100%;
+    user-select: none;
+    padding: 50px !important;
+    margin: 60px auto;
+    position: relative;
+    border-radius: 20px;
+    background: url('https://i.postimg.cc/4d7BXQ8n/image-hall.png') 0 0/auto 100% no-repeat;
+}
+.schedule_title{
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+.address_title{
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+.address_there{
+    background: #FFF;
+    border-radius: 10px;
+    color: #303030;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 5px 20px;
+}
+@media (max-width: 600px) {
+    .schedule_title{
+        color: #FFF;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 400px;
+        margin-bottom: 50px;
+    }
+}
