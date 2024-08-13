@@ -17,13 +17,15 @@ const Wrapper = () =>{
   const [isModal,setModalTarget] = useState(false);
 
   return (
-    <div className={classes.wrapper}>
+      <div className={classes.wrapper}>
 
-      <Header setModalTarget={setModalTarget}/>
-      <Outlet />
-      <Footer />
-      {isModal && <Modals isModal={isModal} setModalTarget={setModalTarget}/>}
-    </div>
+          <Header setModalTarget={setModalTarget}/>
+          <div className={classes.content}>
+              <Outlet/>
+          </div>
+          <Footer/>
+          {isModal && <Modals isModal={isModal} setModalTarget={setModalTarget}/>}
+      </div>
   );
 }
 

@@ -5,6 +5,9 @@
     margin: 0px auto;
     position: relative;
 }
+.contant_email{
+    color: #303030;
+}
 .left{
     display: flex;
     justify-content: space-between;

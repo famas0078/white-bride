@@ -15,6 +15,13 @@
 .menu{
     display: none;
 }
+.text_menu{
+    white-space: nowrap;
+    transition: all .3s;
+}
+.text_menu:hover{
+    transform: translateY(-2px);
+}
 .wrapper_logo{
     display: flex;
     color: #303030;
@@ -51,12 +58,19 @@
     cursor: pointer;
 }
 
+.logo_text_phone{
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .wrapper{
         padding: 30px 30px;
     }
     .menu_phone_but{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-left: 20px;
     }
     .wrapper_navbar{
@@ -159,7 +173,18 @@
     .menu_phone_but input:checked ~ .menu{
         transform: translate(0%, 0%);
     }
+}
+@media (max-width: 768px) {
     .logo_text{
         display: none;
+    }
+    .logo_text_phone{
+        display: block;
+        font-size: calc(24px + 16 * (100vw / 1280)) !important;
+    }
+    .logo_text_phone span{
+        text-align: center;
+        background: none !important;
+        white-space: nowrap;
     }
 }

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import AnimatedPage from "../../AnimatedPage";
 import classes from "./about.module.css";
+import settings from "../../images/settings.png"
 
 const About = () =>{
   return (
@@ -9,7 +10,7 @@ const About = () =>{
         <div className={`container ${classes.wrapper}`}>
           <div className={`row ${classes.contant}`}>
             <div className={`col-12 col-md-6 ${classes.img}`}>
-              <img src="https://i.postimg.cc/C1XPRdtH/image-8.png" alt="error"/>
+              <img src={settings} alt="error"/>
             </div>
             <div className={`col-12 col-md-6 ${classes.discription}`}>
               <div className={classes.title}>

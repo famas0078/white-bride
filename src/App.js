@@ -14,7 +14,6 @@ const Layout = () => {
   </div>
   );
 }
-console.log(classes)
 
 function App() {
   const [data, setData] = useState(null)

@@ -14,20 +14,18 @@ const Footer = () =>{
           <div className={classes.contant_number}>
             +7(928)-429-73-37
           </div>
-          <div className={classes.contant_email}>
-            example@mail.ru
-          </div>
+          <a href="mailto:voteyra@gmail.com" className={`cursor-pointer ${classes.contant_email}`}>
+            voteyra@gmail.com
+          </a>
         </div>
         <div className={`col-6 ${classes.right}`}>
           <div className={classes.icons}>
-            <div className={classes.whatsapp}>
+          <a href="https://wa.me/9384831056" className={classes.whatsapp}>
               <img src={whatsapp} alt="Whatsapp" className={classes.whatsapp}/>
-            </div>
-            <div className={classes.telegram}>
-              <a src="https://t.me/voteyra">
+            </a>
+            <a href="https://t.me/voteyra" target="_blank" className={classes.telegram}>
                 <img src={telegram} alt="Telegram" className={classes.telegram}/>
-              </a>
-            </div>
+            </a>
           </div>
           <h4 className={classes.signature}>
             @ Церковь " Белая Невеста "
