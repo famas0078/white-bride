@@ -11,6 +11,7 @@ import {
   Outlet
 } from "react-router-dom";
 import Modals from "../../components/modal/Modal";
+import Loading from "../../components/loading/Loading";
 
 const Wrapper = () =>{
 
@@ -25,6 +26,7 @@ const Wrapper = () =>{
           </div>
           <Footer/>
           {isModal && <Modals isModal={isModal} setModalTarget={setModalTarget}/>}
+          <Loading/>
       </div>
   );
 }
