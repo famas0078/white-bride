@@ -89,7 +89,7 @@ const Header = (props) =>{
       </div>
       <div className={classes.logo_text_phone}>
         <span className={`d-flex justify-content-center align-items-center mt-5 h-100 w-100`}>
-          Церковьa
+          Церковь
           <br/>
           “Белая невеста”
         </span>
