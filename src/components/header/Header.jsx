@@ -1,6 +1,7 @@
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import classes from "./header.module.css";
 import white_bride from "../../images/white-bride.svg"
+import exms from '../../images/Vector.png'
 import Modal from "../modal/Modal"
 const Header = (props) =>{
 
@@ -20,7 +21,17 @@ const Header = (props) =>{
           </div>
         </div>
         <div className={`d-flex flex-column align-items-end col-4 col-md-4 col-lg-4 col-xxl-6 ${classes.wrapper_navbar}`}>
-          <img className={`mb-3 cursor-pointer`} onClick={handleHref} src="https://cross-house.ru/wp-content/uploads/2019/04/logo-church-new.png" alt=""/>
+          <div className={`d-flex justify-content-center align-items-center`}>
+            <img className={`mb-3 cursor-pointer ${classes.text_title}`} onClick={handleHref} src={exms} alt=""/>
+            <div className={`text-start`}>
+              <h5 className={`${classes.text_title}`}>
+                Евангельский христианский
+              </h5>
+              <h5 className={`${classes.text_title}`}>
+                миссионерский союз
+              </h5>
+            </div>
+          </div>
           <div className={`d-flex`}>
 
             <Link className={`mx-3 ${classes.text_menu}`} to="/">

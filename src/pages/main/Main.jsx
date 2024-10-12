@@ -65,6 +65,20 @@ const Main = () => {
               </div>
             </div>
           </div>
+          <div className={`col-12`}>
+            <div className={`${classes.news_card} p-3 m-lg-0 m-auto`}>
+              <h4 className={`${classes.news_card_title}`}>
+                Объявление:
+              </h4>
+              <p>
+                Богослужение будет проходить на природе! <br/>
+                В честь дня рождения церкви! <br/>
+              </p>
+              <div className={`text-end w-100`}>
+                13.10.2024
+              </div>
+            </div>
+          </div>
         </div>
         {/*<div className="row">*/}
         {/*  <div className={`col-12`}>*/}

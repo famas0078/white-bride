@@ -173,6 +173,9 @@
     .menu_phone_but input:checked ~ .menu{
         transform: translate(0%, 0%);
     }
+    .text_title{
+        white-space: nowrap;
+    }
 }
 @media (max-width: 768px) {
     .logo_text{
